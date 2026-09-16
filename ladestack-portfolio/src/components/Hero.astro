@@ -1,0 +1,47 @@
+---
+/*
+ * Stacked ref-exact hero: large rounded media on top (like the ref's
+ * showreel frame), heading block below — centered like "Experiences. ©2025".
+ */
+---
+
+<section id="top" aria-labelledby="hero-heading" class="mx-auto w-full max-w-shell px-5 pt-6 sm:px-8 sm:pt-10">
+  <!-- Media frame -->
+  <div class="overflow-hidden rounded-media border border-line bg-white shadow-card">
+    <img
+      src="/hero-photo.png"
+      alt="Girish Lade"
+      width="1600"
+      height="900"
+      loading="lazy"
+      decoding="async"
+      class="aspect-[16/10] w-full bg-[#ECEAEF] object-cover object-top sm:aspect-[16/8]"
+    />
+  </div>
+
+  <!-- Heading block -->
+  <div class="mx-auto max-w-2xl pb-4 pt-10 text-center sm:pt-14">
+    <p class="text-[13px] font-semibold uppercase tracking-[0.14em] text-ink/50">
+      Mechanical Engineer &rarr; Software Engineer &mdash; Founder, LadeStack
+    </p>
+    <h1
+      id="hero-heading"
+      class="tracking-tight-head mt-4 text-[42px] font-extrabold leading-[1.02] text-ink sm:text-6xl"
+    >
+      Build smarter products with AI tools.
+    </h1>
+    <p class="mx-auto mt-5 max-w-xl text-[15px] leading-relaxed text-muted sm:text-base">
+      Lade Stack unifies code editing, API testing, documentation, and automation
+      into one powerful ecosystem &mdash; enterprise-grade, zero cost, built for
+      every developer.
+    </p>
+    <div class="mt-8 flex items-center justify-center">
+      <a
+        href="https://www.ladestack.in/"
+        class="rounded-full bg-ink px-7 py-3 text-sm font-semibold text-white transition-opacity hover:opacity-85"
+      >
+        Visit LadeStack
+      </a>
+    </div>
+  </div>
+</section>

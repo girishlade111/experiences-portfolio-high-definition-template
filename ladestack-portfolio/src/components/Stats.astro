@@ -1,0 +1,23 @@
+---
+const stats = [
+  { value: '8K+', label: 'Developers' },
+  { value: '5', label: 'AI Products' },
+  { value: '100+', label: 'Countries' },
+  { value: 'Free', label: 'Forever' },
+];
+---
+
+<section aria-label="Key numbers" class="mx-auto w-full max-w-shell px-5 py-10 sm:px-8">
+  <dl class="grid grid-cols-1 gap-4 md:grid-cols-4">
+    {
+      stats.map((s) => (
+        <div class="glass rounded-card px-6 py-7 text-center md:text-left">
+          <dt class="order-2 mt-1 text-[13px] font-medium text-muted">{s.label}</dt>
+          <dd class="tracking-tight-head order-1 text-4xl font-extrabold text-ink">
+            {s.value}
+          </dd>
+        </div>
+      ))
+    }
+  </dl>
+</section>
