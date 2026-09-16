@@ -11,7 +11,7 @@ const stats = [
   <dl class="grid grid-cols-1 gap-4 md:grid-cols-4">
     {
       stats.map((s) => (
-        <div class="glass rounded-card px-6 py-7 text-center md:text-left">
+        <div class="glass flex flex-col rounded-card px-6 py-7 text-center md:text-left">
           <dt class="order-2 mt-1 text-[13px] font-medium text-muted">{s.label}</dt>
           <dd class="tracking-tight-head order-1 text-4xl font-extrabold text-ink">
             {s.value}
