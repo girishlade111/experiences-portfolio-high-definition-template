@@ -1,0 +1,62 @@
+---
+const products = [
+  {
+    name: 'LS PDF',
+    desc: 'Client-side PDF toolkit, iLovePDF-style.',
+    href: 'https://pdf.ladestack.in',
+  },
+  {
+    name: 'LadeStack Coder',
+    desc: 'AI code editor, build-from-prompt, live preview share.',
+    href: 'https://code.ladestack.in',
+  },
+  {
+    name: 'LadeDesign',
+    desc: 'AI UI/UX flow generator, multi-screen HTML output.',
+    href: 'https://design.ladestack.in',
+  },
+  {
+    name: 'LS Docs',
+    desc: 'AI-powered docs/spreadsheet editor, exports to PDF/DOCX/MD/HTML.',
+    href: 'https://www.ladestack.in/',
+  },
+  {
+    name: 'LadeStack Notes',
+    desc: 'NotebookLM-style RAG notes app, flashcards/quiz/mind-maps/audio overview.',
+    href: 'https://www.ladestack.in/',
+  },
+];
+---
+
+<section id="work" aria-labelledby="products-heading" class="mx-auto w-full max-w-shell scroll-mt-20 px-5 py-10 sm:px-8">
+  <div class="max-w-2xl">
+    <h2
+      id="products-heading"
+      class="tracking-tight-head text-4xl font-extrabold text-ink sm:text-5xl"
+    >
+      Products.
+    </h2>
+    <p class="mt-3 text-[15px] leading-relaxed text-muted">
+      One free ecosystem — five tools that cover the whole build loop.
+    </p>
+  </div>
+
+  <div class="mt-8 grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
+    {
+      products.map((p) => (
+        <article class="glass flex flex-col rounded-card p-6 transition-transform duration-300 hover:-translate-y-1">
+          <h3 class="tracking-tight-head text-xl font-bold text-ink">{p.name}</h3>
+          <p class="mt-2 flex-1 text-sm leading-relaxed text-muted">{p.desc}</p>
+          <a
+            href={p.href}
+            class="mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-ink transition-opacity hover:opacity-70"
+            aria-label={`Visit ${p.name}`}
+          >
+            Visit
+            <span aria-hidden="true">&rarr;</span>
+          </a>
+        </article>
+      ))
+    }
+  </div>
+</section>

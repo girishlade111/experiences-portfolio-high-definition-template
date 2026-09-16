@@ -1,0 +1,55 @@
+---
+const year = new Date().getFullYear();
+---
+
+<section id="contact" aria-labelledby="contact-heading" class="mx-auto w-full max-w-shell scroll-mt-20 px-5 py-10 sm:px-8">
+  <div class="glass rounded-media px-6 py-12 text-center sm:px-12 sm:py-16">
+    <h2
+      id="contact-heading"
+      class="tracking-tight-head mx-auto max-w-xl text-4xl font-extrabold leading-[1.05] text-ink sm:text-5xl"
+    >
+      Let&rsquo;s build something.
+    </h2>
+    <p class="mx-auto mt-4 max-w-md text-[15px] leading-relaxed text-muted">
+      Open to collaborations, feedback, and ideas on free developer tooling.
+    </p>
+
+    <address class="mx-auto mt-8 grid max-w-2xl grid-cols-1 gap-3 text-sm not-italic sm:grid-cols-2">
+      <a
+        href="mailto:admin@ladestack.in"
+        class="rounded-card border border-line bg-white/80 px-5 py-3.5 font-medium text-ink transition-opacity hover:opacity-70"
+      >
+        admin@ladestack.in
+      </a>
+      <a
+        href="https://github.com/girishlade111"
+        class="rounded-card border border-line bg-white/80 px-5 py-3.5 font-medium text-ink transition-opacity hover:opacity-70"
+      >
+        GitHub &rarr;
+      </a>
+      <a
+        href="https://www.linkedin.com/in/girish-lade/"
+        class="rounded-card border border-line bg-white/80 px-5 py-3.5 font-medium text-ink transition-opacity hover:opacity-70"
+      >
+        LinkedIn &rarr;
+      </a>
+      <a
+        href="https://www.ladestack.in/"
+        class="rounded-card border border-line bg-white/80 px-5 py-3.5 font-medium text-ink transition-opacity hover:opacity-70"
+      >
+        Resume / CV &rarr;
+      </a>
+    </address>
+  </div>
+
+  <footer class="flex flex-col items-center justify-between gap-4 px-1 pb-10 pt-8 text-[13px] text-muted sm:flex-row">
+    <p>&copy; {year} Girish Lade. All rights reserved.</p>
+    <nav aria-label="Footer">
+      <ul class="flex items-center gap-6 font-medium">
+        <li><a href="#work" class="transition-colors hover:text-ink">Work</a></li>
+        <li><a href="#stack" class="transition-colors hover:text-ink">Stack</a></li>
+        <li><a href="#contact" class="transition-colors hover:text-ink">Contact</a></li>
+      </ul>
+    </nav>
+  </footer>
+</section>
