@@ -92,3 +92,7 @@ cd experiences-portfolio-high-definition-template
 
 Designed and curated by **Girish Lade** ([@girishlade111](https://github.com/girishlade111)).  
 Open-source under the [MIT License](LICENSE).
+
+---
+
+Built by Girish Lade — [ladestack.in](https://ladestack.in)
